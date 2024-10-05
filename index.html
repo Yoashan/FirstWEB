@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoash - Personal Brand</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Yoash</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen bg-blue-500 text-white flex items-center justify-center" id="hero">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Hello, I'm Yoash!</h1>
+            <p class="text-xl mb-6">A passionate student and athlete, ready to take on the world!</p>
+            <a href="#about" class="bg-white text-blue-500 py-2 px-6 rounded-full font-bold hover:bg-gray-200">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-4" id="about">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">I'm Yoash, a Class 10 student from Sri Lanka with a passion for learning and sports. I excel in cricket, badminton, and swimming, and I always strive to be the best in both academics and extracurriculars. Welcome to my personal website, where you can find more about me and my journey.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-16 bg-gray-100 px-4" id="portfolio">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Example portfolio items -->
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Portfolio item" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Badminton Tournament 2024</h3>
+                    <p class="text-gray-600">An intense singles tournament under the 17 category, where I showcased my skills and passion for badminton.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Portfolio item" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Science Fair 2024</h3>
+                    <p class="text-gray-600">Participated in a science fair with a project on renewable energy solutions, showcasing my interest in sustainability.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <img src="https://via.placeholder.com/400x300" alt="Portfolio item" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Cricket Tournament 2024</h3>
+                    <p class="text-gray-600">Contributed as a key player in a local cricket tournament, playing with great dedication and teamwork.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-4" id="contact">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-6">Feel free to reach out to me for any opportunities, collaborations, or just to say hello!</p>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" class="w-full p-3 rounded-lg border border-gray-300" placeholder="Your Name" required>
+                </div>
+                <div class="mb-4">
+                    <input type="email" class="w-full p-3 rounded-lg border border-gray-300" placeholder="Your Email" required>
+                </div>
+                <div class="mb-4">
+                    <textarea class="w-full p-3 rounded-lg border border-gray-300" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Yoash. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Add any JavaScript functionality here (if needed)
+        document.querySelector("form").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Message sent! I'll get back to you soon.");
+        });
+    </script>
+</body>
+</html>
